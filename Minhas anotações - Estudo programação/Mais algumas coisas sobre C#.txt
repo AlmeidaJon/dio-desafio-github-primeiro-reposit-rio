@@ -1,0 +1,43 @@
+	O que é .Net?
+
+É um framework criado pela microsoft que permite a comunicação entre várias linguagens que tem uma infraestruturacomum (CLI), entre elas o Visual Basic, C++, F# e C#.
+
+	O que é um frameworck?
+
+  É um conjunto de códigos prontos que vai facilitar o desenvolvimento disponibilizando algumas bibliotecas.
+
+	O que é C#?
+
+  Uma linguagem orientada a objetos fortemente tipada. A sitaxe orientada a objetos foi baseada no C++ e possui influÊncias de outras linguagens de programação como Object Pascal e Java.
+
+		SOBRE C#
+
+	Estruturas - Namespace
+
+  Os namespaces são usados para organizar clases.
+
+  Para usar uma classe de outro namespace, colocamos using no começo do código.
+
+	Estruturas - Classe
+
+  Uma clase pode ter campos, propriedades, métodos e eventos dentro dela que não são denominados membros.
+
+	Estruturas - Interface
+
+  É como uma classe base que serve de molde para várias classes.
+
+  Uma classe que implementa uma interface deeve implementar todos os membros. obs: uma interface deve ter o i na frente do nome.
+
+	Estruturas - Enum
+
+  Declara um conjunto de constantes nomeadas que começam do 0 e aumentam de 1 em 1.
+
+	Debugging
+
+  A depuração pode ser feita colocando um BreakPoint no canto esquerdo do código ou apertando f9 e executando ele.
+
+  O código vai parar onde foi colocado o BreakPoint e então o código poderá ser inspecionado.
+
+Projeto de C# para baixar/clonar
+
+https://github.com/Giovanna0208/Intro-CSharp-e-DotNet

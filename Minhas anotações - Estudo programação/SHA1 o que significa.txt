@@ -1,0 +1,2 @@
+A sigla SHA significa Secure Hash Algorithm (Algoritmo de Hash Seguro), é um conjunto de funções hash criptografadas projetadas pela NSA (Agência de Segurança Nacional dos EUA).
+

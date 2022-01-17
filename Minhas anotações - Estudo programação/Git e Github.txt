@@ -1,0 +1,15 @@
+O que é o Github?
+
+R: é o serviço de web compartilhado para projetos que ultilizam o Git para versionamento.
+
+Github é apenas um local na nuvem que vai armazenar os projetos versionados pelo Git
+
+O que é Git?
+
+R: é um sistema de controle de versão.
+
+ Hpje em dia p Github é tipo uma rede social, você disponibiliza o seu código para todo mundo ver, mas também tem a possibilidade de possuir repositórios privados(obs: mas é pago).
+
+	Resumo
+
+  O Git são os arquivos no seu local(computador e etc.), e o Github são os seus arquivos na web,  só o repositório remoto.

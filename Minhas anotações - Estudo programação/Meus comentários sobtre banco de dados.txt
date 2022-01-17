@@ -1,0 +1,63 @@
+O que é o SQL server?
+
+R: é um sistema gerenciador de Banco de dados relacional desenvolvido pela Sybase em parceria com a Microsoft.
+
+O SQL server cria os Bancos de dados do sistema quando ele é instalado, e além do banco de dados do sistema, ele cria automaticamente tabelas de sistema, e essas tabelas de sistema são utilizadas com finalidades internas e NÃO devem ser alteradas.
+
+Existe três tipos de exibição ou função do sistema, que são:
+
+Exibição de catálogo: Corresponde a um conjunto de arquivos que armazenam parâmetros de uma linguagem de computador conhecida como DDL (Data definition language) ou Linguagem de Definição de Dados.
+	A DDL é usada para descrever a estrutura de dados ou informações, ou seja, ela fornece o acesso aos metadados armazenados no servidor. A partir desse catálogo, conseguimos descobrir quais objetos do Banco de Dados foram alterados nos últimos 10 dias, por exemplo.
+		É possível que você encontre o termo “dicionário de dados” em jornais, artigos e revistas. Esse termo tem o mesmo significado de “catálogo”.
+
+Exibição de gerenciamento dinâmico:
+	Tais tabelas retornam dados informando a situação do servidor.
+		Essas informações podem ser usadas para realizar o monitoramento da instância do servidor, diagnosticar problemas, verificar a integridade da instância e acompanhar o desempenho do servidor.
+
+Exibição de compatibilidade:
+	As tabelas conhecidas como exibições de compatibilidade são destinadas à compatibilidade com versões anteriores.
+
+
+Os Bancos de Dados do SQL Server possuem três tipos de arquivos, são eles:
+
+Primário:
+	O arquivo de dados primário contém as informações de inicialização do Banco de Dados e aponta para os outros arquivos no Banco de Dados. Dados do usuário e objetos podem ser armazenados nesse arquivo ou em arquivos de dados secundários.
+		Os arquivos primários são criados pelo usuário. O sistema utiliza a nomenclatura indicada pelo programador para criar o arquivo primário com a extensão .mdf.
+
+Secundário:
+	Os arquivos secundários são definidos pelo usuário e armazenam dados do usuário. Por essa razão, são arquivos opcionais.
+		Os arquivos secundários podem ser usados para distribuir os dados entre os discos, colocando cada arquivo em uma unidade de disco diferente. Além disso, é possível usar arquivos secundários para que um Banco de Dados continue se expandindo, caso ele ultrapasse o tamanho máximo em um único arquivo Windows.
+
+(OBS sobre o arquivo secundário: eles são opcionais e recebem a extensão .ndf.)
+
+Log de transações:
+	Os logs de transações são arquivos que armazenam as informações de log usadas para recuperar ou restaurar o Banco de Dados. Nesse sentido, o termo LOG significa relatório.
+		Deve haver um arquivo de log para cada Banco de Dados, no mínimo. A extensão de nome de arquivo indicada para arquivos de transação é .ldf.
+
+
+Tipos de Grupos de Arquivos
+
+Grupo primário
+	Grupo de arquivos que contém o arquivo primário.
+		Todas as tabelas do sistema são alocadas nesse grupo.
+
+Grupo secundário – definido pelo usuário
+	Qualquer grupo de arquivos que seja definido pelo usuário quando ele cria ou modifica o Banco de Dados.
+
+Grupo padrão
+	Grupo de objetos criados no Banco de Dados sem especificação de grupo de arquivos a que pertencem.
+
+(OBS: arquivos LDF (Um arquivo LDF armazena informações suficientes para replicar ou desfazer uma alteração ou recuperar o banco de dados a partir de um ponto específico.) não podem pertencer a grupos de arquivos. Nesse caso, eles são analisados separadamente.)
+
+
+
+Palavras chaves que é importante saber o que são e os seus significados:
+
+Metadados: Dados que descrevem a estrutura do Banco de Dados.
+
+Disco rígido ou Disco duro: popularmente chamado também de HD, "memória de massa" ou "memória secundária", é a parte do computador onde são armazenados os dados.
+
+
+
+
+SQL Server Management Studio é um ambiente de desenvolvimento integrado que nos permite acessar, configurar, gerenciar e desenvolver todos os componentes do SQL Server.

@@ -1,0 +1,89 @@
+	Tipos de valor
+
+  Variáveis de tipos d valor contêm diretamente seus dados
+
+  As variáveis têm sua própria cópia dos dados e não é possível que as operações afetem outra variável (exceto no caso das variáveis de parâmetro ref e out)
+
+  -> Numéricos: sbyte, short, int, long, byte, ushort, uint, ulong
+
+  -> Caracteres Unicode: char
+
+  -> Pontos flutuantes: float, double, decimal
+
+  -> Booleano: bool
+
+  enum, struct e tipos nullable (Exemplo unt?)
+
+  Variáveis de tipos de referência ao mesmo objeto e, portanto, que operações em uma variável afetem o objeto referenciado pela outra variável.
+
+  Tipos de classe: class, object, string
+
+  Tiipos Arrays: int[], int[,], etc;;;
+
+  interface, delegate
+
+	Instruções 
+
+  Ações de um programa são expressas usando instruções
+
+  {
+	um bloco permite que várias instruções sejam escritas em contextos
+  }
+
+  Declaração de variáveis e constantes locais
+
+  -> if
+  -> switch
+  -> while
+  -> do
+  -> for 
+  -> foreach
+
+	INstruções auxiliares
+
+  -> break
+  -> continue
+  -> return
+  -> throw
+  -> try.. catch.. finaly
+  -> using
+
+	Classes e Objetos
+
+  Classses são os tipos mais fundamentais de C#
+
+  Uma classe é uma estrutura de dados que combina estado (campos) e ações (métodos).
+
+  Objetos são instâncias de uma classe
+
+  As classes suportam herança e polimorfismo, mecanismos pelos quais as classes derivadas podem estender e especializar as classes base.
+
+  A memória ocupada por um objeto é recuperada automaticamente quando o objeto não esta mais acessível. Não é necessário nem possível desalocar explicitamente objetos em C#. 
+
+  Os membros de um classe podem ser estáticos ou membros da instância.
+
+  Membros estáticos pertencem a classe e membros de instância pertencem ao objeto.
+
+  Constantes, variáveism étodos, propriedades, construtores, etc...
+
+  Cada membro de uma classe tem uma acessibilidade associada, que controla as regiões do texto do programa que podem acessar membro.
+
+  Podem ser: 
+  -> public
+  -> protected
+  -> internal
+  -> private
+
+	Herança
+
+  Uma declaração de classe pode especificar uma classe base, herdando os membros public, internal e protect da classe base.
+
+  Omitir uma especificação de classe base é o mesmo que derivar do tipo object.
+
+	Métodos
+
+  Um método é um membro que implementa uma computação ou ação que pode ser executada por um objeto ou classe.
+
+  os métodos podem ter uma lista de parâmetros, que representam valores ou referências de variáveis passados para o método, e um tipo de retorno que especifica o tipo do valor calculado e retorna o método.
+
+  

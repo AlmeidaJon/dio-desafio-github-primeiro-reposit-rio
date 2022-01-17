@@ -1,0 +1,80 @@
+		Conhecendo o C#
+
+	O que é C#?
+
+  É uma linguágem de programação que foi criada no final da década de 90 jundo com o .Net no começo dos anos 2000, segundo a documentação C# é uma linguagem elegante, orientada a objeto e fortemente tipada.
+
+  A sinxtaxe do C# é similar a do C,C++ ou Java
+
+  Suporta os conceitos de encapsulamento, herança e polimorfismo (OO(Orientada a Objeto))
+
+Os programas C# são executados no .Net, que inclui:
+  CLR (Common Lenguage Runtime)
+  Conjunto unificado de bibliotecas de classes
+
+Atualmente o compilador do C# é o Roslyn
+
+Roslyn: é um compilador de C#
+
+	Como funciona?
+
+  O código fonte escrito em C# é compilado em uma linguagem intermediária (IL)
+
+  O código e os recursos de IL são armazenados no disco em um arquivo executável chamado assembly, geralmente com uma extensão .exe ou .dll
+
+OBS: dll é um código compilado em uma linguagem intermediária.
+
+  Qaundo o programa C# é executado, o assembly é carregado no CLR
+
+  Em seguida o CLR executará a compilação just in time (JIT) para converter o código IL em instruções de máquinas nativas
+
+  O CLR também fornece outros serviços:
+  -Garbage Collector: Ele verifica os objetos que não estão mais sendo ultilizados, e desaloca esses objetos da memória para que se libere espaços na memória.
+  -Exception Handler: Ele recebe e controla as exceções de erros nos códigos e tem um gerenciador de recursos.
+  -Resources Manager
+
+ Além dos serviços de tempo de execução, o .Net também inclui uma extensa biblioteca com milhares de classes que fornecem uma ampla variedade de funcionalidades úteis, desde entrada e saída de arquivos, manipulação de cadeias de caracteres, análise XML, etc.
+
+	Estrutura de Preograma
+
+  Os principais conceitos organizacionais em C# são:
+
+  -> Programas
+  -> namespaces
+  -> tipos
+  -> membros
+  -> assemblies
+
+  Programas C# consistem em um ou mais arquivos
+
+  Os programas declaram tipos, que contêm membros e podem ser organizados em namespaces
+
+  Classes e interfaces são exemplis de tipos
+
+  Campos, métodos, propriedades e eventos são exemplos de membros
+
+  Quando os programas C# são compilados, eles são fisicamente empacotados em assemblies
+
+  Os assemblies geralmente têm a extensão de arquivo .exe ou .dll, dependendo se são aplicações ou bibliotecas
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

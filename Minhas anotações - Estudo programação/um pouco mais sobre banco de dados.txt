@@ -1,0 +1,67 @@
+Banco de dados orientada a grafos: Neo4j é um dos BD NoSQL ultiliazdos para criação de BD orientada a grafos.
+
+ele é um dos poucos bancos de dados não relacionais que aplicam as características ACID(Atomicidade, Consistência, Isolamento e Durabilidade.).
+
+ele usa a linguagem saifer como forma de linguagem e estruturação de seus dados.
+
+Iremos ultilizar o Redis um banco de dados, cache, massageria e fila.
+
+ - Alto desempenho.
+ - Estrutura de dados na memória.
+ - Versatilidade de usp.
+ - Replicação e persistência.
+
+Quem usa? twitter, github entre outros. (try.redis.io)
+
+Como criar um banco de dados no transact-SQL?
+
+R- USE Master
+GO
+CREATE DATABASE Nome_do_Banco_de_Dados
+ON 
+( NAME = nome_dat, 
+  FILENAME = 'C:\Program Files\Microsoft SQL 
+Server\MSSQL11.MSSQLSERVER\MSSQL\DATA\nome.mdf',
+  SIZE = 10,
+  MAXSIZE = 50,
+  FILEGROWTH = 5 )
+LOG ON
+( NAME = nome_log,
+  FILENAME = 'C:\Program Files\Microsoft SQL 
+Server\MSSQL11.MSSQLSERVER\MSSQL\DATA\nomelog.ldf',
+  SIZE = 5MB,
+  MAXSIZE = 25MB,
+  FILEGROWTH = 5MB ) .
+GO 
+
+Observando o código, você viu que, utilizando o T-SQL, temos diversos comandos e parâmetros, certo? Para conhecer sua funcionalidade, clique em cada um deles a seguir.
+
+CREATE DATABASE Nome_Do_Banco_De_Dados
+Indica o nome do Banco de Dados.
+
+Não podemos criar Bancos de Dados com o mesmo nome em um servidor.
+
+ON
+Indica o caminho para armazenar arquivos.
+
+FILENAME
+É usado para definir o nome físico de um arquivo.
+
+SIZE
+Define o tamanho de um arquivo.
+
+Pode ser definido utilizando Kilobytes (KB), Megabytes (MB), Gigabytes (GB) ou Terabytes (TB).
+
+MAXSIZE
+É usado para definir o tamanho máximo que um arquivo pode atingir.
+
+Se o maxsize não for informado, o arquivo crescerá de acordo com a base de dados, até que todo o espaço disponível em disco seja utilizado.
+
+FILEGROWTH
+É usado para definir o incremento de crescimento do arquivo.
+
+É possível informar em Kilobytes, Megabytes ou em porcentagem (%).
+
+LOGON
+Indica em que lugar os arquivos log devem ser definidos.
+
